@@ -1,7 +1,8 @@
 - hosts: localhost
   vars:
     dest_ssh_key: "{{ lookup('env', 'HOME') }}/.ssh/id_rsa"
-    personal_dev: "{{ lookup('env', 'HOME') }}/Development/Personal"
+    personal_dev_folder: "{{ lookup('env', 'HOME') }}/Development/Personal"
+    clearcover_dev_folder: "{{ lookup('env', 'HOME') }}/Development/Clearcover"
   pre_tasks:
     - name: Update Apt
       become: true
@@ -13,9 +14,10 @@
         - install
         - core
   tasks:
-    - include: tasks/ssh.yml
+    # - include: tasks/ssh.yml
     - include: tasks/zsh.yml
     - include: tasks/personal-projects.yml
+    - include: tasks/claercover-projects.yml
     # - include: tasks/git-setup.yml
     # - include: tasks/core-setup.yml
     # - include: tasks/node-setup.yml

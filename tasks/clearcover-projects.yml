@@ -1,0 +1,62 @@
+- name: Clearcover Projects - Choice Quote Service
+  ansible.builtin.git:
+    repo: "git@github.com:Clearcover/choice-quote-service.git"
+    dest: "{{ clearcover_dev_folder }}/choice-quote-service"
+  tags:
+    - clearcover-projects
+
+- name: Clearcover Projects - Choice Quote Service Deploy
+  ansible.builtin.git:
+    repo: "git@github.com:Clearcover/choice-quote-service-deploy.git"
+    dest: "{{ clearcover_dev_folder }}/choice-quote-service-deploy"
+  tags:
+    - clearcover-projects
+
+- name: Clearcover Projects - CC-API-SPEC
+  ansible.builtin.git:
+    repo: "git@github.com:Clearcover/cc-api-spec.git"
+    dest: "{{ clearcover_dev_folder }}/cc-api-spec"
+  tags:
+    - clearcover-projects
+
+- name: Clearcover Projects - Jagger
+  ansible.builtin.git:
+    repo: "git@github.com:Clearcover/jagger.git"
+    dest: "{{ clearcover_dev_folder }}/jagger"
+  tags:
+    - clearcover-projects
+
+- name: Clearcover Projects - Core-App
+  ansible.builtin.git:
+    repo: "git@github.com:Clearcover/core-app.git"
+    dest: "{{ clearcover_dev_folder }}/core-app"
+  tags:
+    - clearcover-projects
+
+- name: Clearcover Projects - Reznor
+  ansible.builtin.git:
+    repo: "git@github.com:Clearcover/reznor.git"
+    dest: "{{ clearcover_dev_folder }}/reznor"
+  tags:
+    - clearcover-projects
+
+- name: Clearcover Projects - Attribution
+  ansible.builtin.git:
+    repo: "git@github.com:Clearcover/attribution.git"
+    dest: "{{ clearcover_dev_folder }}/attribution"
+  tags:
+    - clearcover-projects
+
+- name: Clearcover Projects - Auth0
+  ansible.builtin.git:
+    repo: "git@github.com:Clearcover/auth0.git"
+    dest: "{{ clearcover_dev_folder }}/auth0"
+  tags:
+    - clearcover-projects
+
+- name: Clearcover Projects - Infrastructure
+  ansible.builtin.git:
+    repo: "git@github.com:Clearcover/infrastructure.git"
+    dest: "{{ clearcover_dev_folder }}/infrastructure"
+  tags:
+    - clearcover-projects
