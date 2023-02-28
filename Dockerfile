@@ -10,7 +10,7 @@ RUN apt-get update && \
     apt-get clean autoclean && \
     apt-get autoremove --yes
 
-FROM base AS via
+FROM base AS prime
 ARG TAGS
 RUN addgroup --gid 1000 via
 RUN adduser --gecos via --uid 1000 --gid 1000 --disabled-password via
