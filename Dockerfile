@@ -1,4 +1,4 @@
-FROM ubuntu:focal AS base
+FROM ubuntu:latest AS base
 WORKDIR /usr/local/bin
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
@@ -19,4 +19,4 @@ WORKDIR /home/via
 
 FROM via
 COPY . .
-CMD ["sh", "-c", "ansible-playbook $TAGS local.yml -v"]
+CMD ["sh", "-c", "ansible-playbook $TAGS local.yml -vvvv"]

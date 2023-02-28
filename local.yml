@@ -13,7 +13,6 @@
         state: present
       tags:
         - install
-        - core
   tasks:
     - include: tasks/ssh.yml
     - include: tasks/zsh.yml
