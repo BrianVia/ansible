@@ -15,7 +15,7 @@
         - install
         - core
   tasks:
-    # - include: tasks/ssh.yml
+    - include: tasks/ssh.yml
     - include: tasks/zsh.yml
     - include: tasks/personal-projects.yml
     - include: tasks/clearcover-projects.yml
