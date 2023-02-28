@@ -19,4 +19,4 @@ WORKDIR /home/via
 
 FROM via
 COPY . .
-CMD ["sh", "-c", "ansible-playbook $TAGS local.yml"]
+CMD ["sh", "-c", "ansible-playbook $TAGS local.yml -v"]
