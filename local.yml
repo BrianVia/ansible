@@ -1,6 +1,7 @@
 - hosts: localhost
   vars:
-    dest_ssh_key: "{{ lookup('env', 'HOME') }}/.ssh/id_rsa"
+    source_ssh_key: "./.ssh/id_ed25519"
+    dest_ssh_key: "{{ lookup('env', 'HOME') }}/.ssh/id_ed25519"
     personal_dev_folder: "{{ lookup('env', 'HOME') }}/Development/Personal"
     clearcover_dev_folder: "{{ lookup('env', 'HOME') }}/Development/Clearcover"
   pre_tasks:
